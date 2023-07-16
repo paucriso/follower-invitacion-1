@@ -12,6 +12,11 @@ export default {
     ],
 
     theme: {
+        fontFamily: {
+            'open': ['"Open Sans"', 'sans-serif'],
+            'nanum': ['"Nanum Myeongjo"', 'serif'],
+            'simonetta': ['Simonetta', 'cursive']
+        },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],

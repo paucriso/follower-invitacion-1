@@ -1,7 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Simonetta:wght@400;900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 [x-cloak] {
     display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+
+.sombra {
+    text-shadow: 1px 3px 0 #969696, 1px 30px 5px #000000;
+}
+
+.divisor {
+    fill: blue;
+}
+
+.left-to-right {
+    animation: leftToRight 30s ease 0s infinite normal forwards;
+}
+
+#intro {
+    position: relative;
+}
+
+#intro::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/public/storage/images/arreglo-floral-top.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#intro::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/public/storage/images/arreglo-floral-bottom-sm.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#galeria::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url("/public/storage/images/adorno-top.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#galeria::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url("/public/storage/images/adorno-bottom.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes leftToRight {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
 }
