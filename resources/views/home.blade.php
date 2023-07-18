@@ -6,6 +6,7 @@
     <x-intro />
     <x-countdown />
     <x-galeria />
+    <x-confirmation />
 
 
 @endsection

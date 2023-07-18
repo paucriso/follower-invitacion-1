@@ -12,9 +12,11 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
         @stack('styles')
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireStyles
     </head>
     <body class="bg-stone-800">
         @yield('content')
         @stack('scripts')
+        @livewireScripts
     </body>
 </html>
