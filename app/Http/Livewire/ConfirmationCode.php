@@ -13,10 +13,15 @@ class ConfirmationCode extends Component
     public $guest;
     public $respuesta;
     public $asistentes;
+    public $deseos;
 
     public function confirmar($id) {
         $guest = Guest::find($id);
-        dd($this->respuesta, $this->asistentes);
+        $guest->response = $this->respuesta;
+        $guest->assistants = $this->asistentes;
+        $guest->confirmado = true;
+        $guest->desires = $this->deseos;
+        $guest->save();
     }
 
     public function render()

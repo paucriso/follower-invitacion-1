@@ -9,11 +9,11 @@
             <p>Dispones de {{ $guest->pases }} pase{{ $guest->pases > 1 ? 's' : '' }}</p>
             <p class="mt-5 mb-3 font-bold">¿Podemos contar {{ $guest->pases > 1 ? 'con ustedes' : 'contigo' }}?</p>
             <div>
-                <input wire:model="respuesta" type="radio" name="respuesta" value="afirmativa">
+                <input wire:model.defer="respuesta" type="radio" name="respuesta" value="afirmativa">
                 <label for="afirmativa">¡Por supuesto! allí {{ $guest->pases > 1 ? 'estaremos' : 'estaré' }}</label>
             </div>
             <div>
-                <input wire:model="respuesta" type="radio" name="respuesta" value="negativa">
+                <input wire:model.defer="respuesta" type="radio" name="respuesta" value="negativa">
                 <label for="negativa">Lamentablemente no {{ $guest->pases > 1 ? 'podremos' : 'podré' }} asistir</label>
             </div>
 
@@ -22,14 +22,14 @@
                 <div class="flex justify-center items-center">
                     @for ($i = 0; $i < $guest->pases; $i++)
                         <div class="mr-3 flex items-center justify-center">
-                            <input wire:model="asistentes" class="mr-1" type="radio" name="asistentes" value="{{$i+1}}">
+                            <input wire:model.defer="asistentes" class="mr-1" type="radio" name="asistentes" value="{{$i+1}}">
                             <label for="asistentes">{{$i+1}}</label>
                         </div>
                     @endfor
                 </div>
             @endif
             <p class="mt-5 mb-3 font-bold">Escríbenos una dedicatoria</p>
-            <textarea class="w-11/12 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="dedicatoria" id="dedicatoria" cols="30" rows="10"></textarea>
+            <textarea wire:model.defer="deseos" class="w-11/12 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="dedicatoria" id="dedicatoria" cols="30" rows="10"></textarea>
             <x-button wire:click="confirmar({{$guest->id}})">Enviar Confirmación</x-button>
         </div>
     @endif

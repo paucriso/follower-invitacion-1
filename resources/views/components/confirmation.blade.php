@@ -1,5 +1,6 @@
-<section class="bg-stone-200 px-20 pt-12 pb-20 min-h-screen h-auto">
-    <h1 class="text-center font-simonetta uppercase text-3xl mb-12 text-neutral-800 font-black">
+<section style="background-image: url('{{asset('storage/images/old-paper.jpg')}}')"
+         class="bg-stone-200 px-20 pt-12 pb-20 min-h-[300px] h-auto">
+    <h1 class="text-center font-simonetta uppercase text-3xl mb-12 text-pink-800 font-black">
         Te invitamos a nuestra boda
     </h1>
     <p class="text-center font-nanum text-xl">Queremos que compartan junto a nosotros éste momento tan especial.</p>

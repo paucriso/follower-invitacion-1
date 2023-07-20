@@ -75,7 +75,24 @@
                             {{ $guest->pases }}
                         </td>
                         <td class="px-6 py-4">
-                            {{ $guest->confirmado == false ? 'sin confirmar' : 'confirmado' }}
+                            {{-- {{ $guest->confirmado == false ? 'sin confirmar' : 'confirmado' }} --}}
+                            @if ($guest->confirmado == false)
+                                sin confirmar
+                            @else
+                                @if ($guest->response == 'afirmativa')
+                                    @if ($guest->pases > 1)
+                                        @if ($guest->assistants > 1)
+                                            <span class="text-green-500">allí estaremos {{ $guest->assistants }} personas</span>
+                                        @else
+                                            <span class="text-green-500">allí estaremos 1 persona</span>
+                                        @endif
+                                    @else
+                                        <span class="text-green-500">allí estaré</span>
+                                    @endif
+                                @else
+                                    <span class="text-red-500">no podré asistir</span>
+                                @endif
+                            @endif
                         </td>
                         <td class="px-6 py-4">
                             <span wire:click="$emitTo('edit-guest', 'edit', {{ $guest->id }})" href="#"><i
