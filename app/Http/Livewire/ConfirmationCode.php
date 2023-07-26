@@ -14,6 +14,7 @@ class ConfirmationCode extends Component
     public $respuesta;
     public $asistentes;
     public $deseos;
+    public $mostrarGracias = false;
 
     public function confirmar($id) {
         $guest = Guest::find($id);
@@ -22,6 +23,7 @@ class ConfirmationCode extends Component
         $guest->confirmado = true;
         $guest->desires = $this->deseos;
         $guest->save();
+        $this->mostrarGracias = true;
     }
 
     public function render()

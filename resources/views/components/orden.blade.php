@@ -1,5 +1,5 @@
-<section id="orden" class="px-20 py-20 bg-green-100 relative">
-    <div class="flex justify-between bg-white font-simonetta max-w-3xl mx-auto rounded-md px-10 py-16 text-3xl shadow-lg">
+<section id="orden" class="px-5 lg:px-20 py-20 bg-emerald-100 relative">
+    <div class="flex justify-between bg-white font-simonetta max-w-3xl mx-auto rounded-md px-10 py-16 text-xl lg:text-3xl shadow-lg">
         <div class="text-left">
             <div class="h-10 mb-8">5:00 p.m.</div>
             <div class="h-10 my-8">

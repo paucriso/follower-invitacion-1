@@ -19,6 +19,10 @@ class ListGuests extends Component
         $guest->delete();
     }
 
+    public function openModal($id) {
+        $this->emitTo('comentarios-modal', 'openModal', $id);
+    }
+
     public function order($sort) {
         if($this->sort == $sort) {
             if($this->direction == 'desc') {

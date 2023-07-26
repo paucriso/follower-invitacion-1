@@ -149,3 +149,31 @@
     background-repeat: no-repeat;
     background-position: bottom left;
 }
+
+
+
+
+@media (max-width: 1024px) {
+
+    #intro::after {
+        background-size: 250px;
+    }
+
+    #galeria::after {
+        background-size: 100px;
+    }
+
+    #galeria::before {
+        background-size: 100px;
+    }
+
+    #orden::after {
+        background-size: 100px;
+    }
+
+    #orden::before {
+        background-size: 100px;
+    }
+
+
+}

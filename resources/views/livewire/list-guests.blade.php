@@ -1,4 +1,6 @@
 <div>
+
+    @livewire('comentarios-modal')
     <div class="mb-4 flex justify-between gap-1">
         <x-input class="grow" name="nombre" type="text" wire:model="search" placeholder="Ingrese texto a buscar..." />
         @livewire('create-guest')
@@ -82,7 +84,8 @@
                                 @if ($guest->response == 'afirmativa')
                                     @if ($guest->pases > 1)
                                         @if ($guest->assistants > 1)
-                                            <span class="text-green-500">allí estaremos {{ $guest->assistants }} personas</span>
+                                            <span class="text-green-500">allí estaremos {{ $guest->assistants }}
+                                                personas</span>
                                         @else
                                             <span class="text-green-500">allí estaremos 1 persona</span>
                                         @endif
@@ -95,6 +98,19 @@
                             @endif
                         </td>
                         <td class="px-6 py-4">
+                            @isset($guest->desires)
+                                @if ($guest->desires !== null)
+                                    <span wire:click="openModal({{ $guest->id }})">
+                                        <i class="fa-solid fa-envelope text-green-700 mr-2 cursor-pointer fa-lg"></i>
+                                    </span>
+                                @endif
+                            @else
+                                <span>
+
+                                    <i class="fa-solid fa-envelope mr-2 text-neutral-400 fa-lg"></i>
+                                </span>
+                            @endisset
+
                             <span wire:click="$emitTo('edit-guest', 'edit', {{ $guest->id }})" href="#"><i
                                     class="fa-solid fa-pen-to-square text-blue-600 mr-2 cursor-pointer fa-lg"></i></span>
                             <span wire:click="$emit('deletePost', {{ $guest->id }})" href="#"><i
@@ -113,6 +129,4 @@
             {{ $guests->links() }}
         </div>
     @endif
-
-
 </div>
