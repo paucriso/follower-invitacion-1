@@ -39,7 +39,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("/public/storage/images/arreglo-floral-top.png");
+    background-image: url("/public/storage/images/adorno-floral-1-t.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top left;
@@ -52,7 +52,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("/public/storage/images/arreglo-floral-bottom-sm.png");
+    background-image: url("/public/storage/images/adorno-floral-1-b.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -65,8 +65,8 @@
     height: 100%;
     top: 0;
     right: 0;
-    background-image: url("/public/storage/images/adorno-top.png");
-    background-size: 150px;
+    background-image: url("/public/storage/images/adorno-floral-2-t.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -78,8 +78,8 @@
     height: 100%;
     bottom: 0;
     left: 0;
-    background-image: url("/public/storage/images/adorno-bottom.png");
-    background-size: 150px;
+    background-image: url("/public/storage/images/adorno-floral-2.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom left;
 }
@@ -131,8 +131,8 @@
     height: 100%;
     top: 0;
     right: 0;
-    background-image: url("/public/storage/images/hojas-top.png");
-    background-size: 450px;
+    background-image: url("/public/storage/images/adorno-floral-3-t.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -144,8 +144,8 @@
     height: 100%;
     bottom: 0;
     left: 0;
-    background-image: url("/public/storage/images/hojas-bottom.png");
-    background-size: 450px;
+    background-image: url("/public/storage/images/adorno-floral-3-b.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom left;
 }
@@ -160,19 +160,19 @@
     }
 
     #galeria::after {
-        background-size: 100px;
+        background-size: 130px;
     }
 
     #galeria::before {
-        background-size: 100px;
+        background-size: 130px;
     }
 
     #orden::after {
-        background-size: 100px;
+        background-size: 130px;
     }
 
     #orden::before {
-        background-size: 100px;
+        background-size: 130px;
     }
 
 

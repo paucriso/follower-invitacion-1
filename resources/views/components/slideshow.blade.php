@@ -8,33 +8,35 @@
         <div id="particles-js" class="absolute w-full h-full top-0 left-0 z-10"></div>
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide relative bg-center"
-                style="background-image: url('{{ asset('storage/images/pareja-1-portada-1.jpg') }}');">
+            <div class="swiper-slide relative bg-cover lg:bg-center"
+                style="background-image: url('{{ asset('storage/images/portada-1.jpg') }}');">
                 <div
                     class="leading-relaxed text-white text-center absolute top-1/2 left-1/2
                             transform -translate-x-1/2 -translate-y-1/2">
-                    <h3 class="font-open text-lg">TE INVITAMOS A NUESTRA BODA</h3>
-                    <h1 class="font-simonetta text-6xl">MEGAN & ALEX</h1>
-                    <div class="py-4">
+                    <h3 class="font-open text-lg">Mis Quince Años</h3>
+                    <h1 class="font-simonetta text-6xl">MARÍA ELENA</h1>
+                    {{-- <div class="py-4">
                         <img class="mx-auto max-h-8" src="{{ asset('storage/images/divisor.png') }}" alt="">
-                    </div>
-                    <p class="font-open italic font-extralight tracking-wider">Te invitamos a compartir la alegría de
-                        compartir nuestras vidas.</p>
+                    </div> --}}
+                    <p class="font-open italic font-extralight tracking-wider">
+                        Acompáñame a festejar este momento único de mi vida.
+                    </p>
                 </div>
             </div>
 
-            <div class="swiper-slide relative bg-top"
-                style="background-image: url('{{ asset('storage/images/pareja-1-portada-2.jpg') }}');">
+            <div class="swiper-slide relative bg-right lg:bg-top bg-cover"
+                style="background-image: url('{{ asset('storage/images/portada-2.jpg') }}');">
                 <div
                     class="leading-relaxed text-white text-center absolute top-1/2 left-1/2
                             transform -translate-x-1/2 -translate-y-1/2">
-                    <h3 class="font-open text-lg">TE INVITAMOS A NUESTRA BODA</h3>
-                    <h1 class="font-simonetta text-6xl">MEGAN & ALEX</h1>
-                    <div class="py-4">
+                    <h3 class="font-open text-lg">Mis Quince Años</h3>
+                    <h1 class="font-simonetta text-6xl">MARÍA ELENA</h1>
+                    {{-- <div class="py-4">
                         <img class="mx-auto max-h-8" src="{{ asset('storage/images/divisor.png') }}" alt="">
-                    </div>
-                    <p class="font-open italic font-extralight">Te invitamos a compartir la alegría de compartir
-                        nuestras vidas.</p>
+                    </div> --}}
+                    <p class="font-open italic font-extralight">
+                        Acompáñame a festejar este momento único de mi vida.
+                    </p>
                 </div>
             </div>
 
@@ -47,7 +49,7 @@
                 class="animate-bounce cursor-pointer w-8 h-8 bg-white rounded-full flex justify-center items-center text-xl">
                 <i id="iconAudio" class="text-pink-700 fa-solid fa-volume-low"></i>
             </div>
-            <audio id="player" src="{{ asset('storage/music/musica.mp3') }}" autoplay>
+            <audio id="player" src="{{ asset('storage/music/musica2.mp3') }}" autoplay>
             </audio>
         </div>
     </div>

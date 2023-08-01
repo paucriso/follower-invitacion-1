@@ -1,4 +1,4 @@
-<section id="orden" class="px-5 lg:px-20 py-20 bg-emerald-100 relative">
+<section id="orden" class="px-5 lg:px-20 py-20 bg-pink-100 relative" style="background-image: url('{{asset('storage/images/gas-rosa.png')}}')">
     <div class="flex justify-between bg-white font-simonetta max-w-3xl mx-auto rounded-md px-10 py-16 text-xl lg:text-3xl shadow-lg">
         <div class="text-left">
             <div class="h-10 mb-8">5:00 p.m.</div>
@@ -25,31 +25,31 @@
         </div>
         <div class="w-1 bg-pink-300 text-pink-300">
             <div class="flex justify-center items-center h-10 mb-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 my-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
             <div class="flex justify-center items-center h-10 mt-8">
-                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-heart fa-2xs"></i>
             </div>
         </div>
         <div class="text-right">

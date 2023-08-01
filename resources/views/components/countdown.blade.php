@@ -2,46 +2,46 @@
 <div
     x-data="timer()"
     x-init="countdown()"
-    style="background-image: url({{asset('storage/images/contador.jpg')}})"
-    class="h-96 w-full bg-cover bg-center font-nanum font-bold bg-no-repeat"
+    style="background-image: url({{asset('storage/images/countdown.jpg')}})"
+    class="h-96 w-full bg-cover bg-center font-nanum font-bold bg-no-repeat relative"
 >
     <div class="max-w-full h-96 text-white flex flex-col items-center justify-around py-20">
-        <h2 class="text-3xl font-nanum font-medium mb-10">Faltan:</h2>
+        <h2 class="text-3xl font-simonetta text-pink-100 font-bold mb-10">Faltan:</h2>
         <div class="flex justify-around items-center w-full h-full">
             <div class="flex justify-center items-center flex-col">
                 <p class="contenedor-fecha relative flex justify-center items-center text-3xl font-bold font-nanum w-20 h-20
-                    bg-white bg-opacity-20 rounded-xl">
-                    <span x-text="days"></span>
-                    <img class="absolute -bottom-2 -right-3 w-8" src="{{asset('storage/images/florecita.png')}}" alt="">
+                    bg-white bg-opacity-80 rounded-full">
+                    <span class="text-pink-500" x-text="days"></span>
+                    <img class="absolute -bottom-1 -right-1 w-8" src="{{asset('storage/images/flor-rosa.png')}}" alt="">
                 </p>
                 <p class="pt-2 tracking-wide text-lg italic">Días</p>
             </div>
             <div class="flex justify-center items-center flex-col">
                 <p class="contenedor-fecha relative flex justify-center items-center text-3xl font-bold font-nanum w-20 h-20
-                    bg-white bg-opacity-20 rounded-xl">
-                    <span x-text="hours"></span>
-                    <img class="absolute -bottom-2 -right-3 w-8" src="{{asset('storage/images/florecita.png')}}" alt="">
+                    bg-white bg-opacity-80 rounded-full">
+                    <span class="text-pink-500" x-text="hours"></span>
+                    <img class="absolute -bottom-1 -right-1 w-8" src="{{asset('storage/images/flor-rosa.png')}}" alt="">
                 </p>
                 <p class="pt-2 tracking-wide text-lg italic">Horas</p>
             </div>
             <div class="flex justify-center items-center flex-col">
                 <p class="contenedor-fecha relative flex justify-center items-center text-3xl font-bold font-nanum w-20 h-20
-                    bg-white bg-opacity-20 rounded-xl">
-                    <span x-text="minutes"></span>
-                    <img class="absolute -bottom-2 -right-3 w-8" src="{{asset('storage/images/florecita.png')}}" alt="">
+                    bg-white bg-opacity-80 rounded-full">
+                    <span class="text-pink-500" x-text="minutes"></span>
+                    <img class="absolute -bottom-1 -right-1 w-8" src="{{asset('storage/images/flor-rosa.png')}}" alt="">
                 </p>
                 <p class="pt-2 tracking-wide text-lg italic">Minutos</p>
             </div>
             <div class="flex justify-center items-center flex-col">
                 <p class="contenedor-fecha relative flex justify-center items-center text-3xl font-bold font-nanum w-20 h-20
-                    bg-white bg-opacity-20 rounded-xl">
-                    <span x-text="seconds"></span>
-                    <img class="absolute -bottom-2 -right-3 w-8" src="{{asset('storage/images/florecita.png')}}" alt="">
+                    bg-white bg-opacity-80 rounded-full">
+                    <span class="text-pink-500" x-text="seconds"></span>
+                    <img class="absolute -bottom-1 -right-1 w-8" src="{{asset('storage/images/flor-rosa.png')}}" alt="">
                 </p>
                 <p class="pt-2 tracking-wide text-lg italic">Segundos</p>
             </div>
         </div>
-        <h2 class="text-3xl font-nanum font-medium mt-10">para casarnos</h2>
+        <h2 class="text-3xl font-simonetta text-pink-100 font-bold mt-10">para mis XV años</h2>
 
     </div>
 </div>
